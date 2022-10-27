@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<meta charset="UTF-8">
+	<title>Web</title>
+	<link rel="stylesheet" href="{% static 'css/basic.css' %}" type="text/css">
+</head>
+<body>
+  <h1>TEST</h1>
+  <li><a href="/appli/home"><strong>ACCUEIL</strong></a></li>
+  <li><a href="/appli/light1"><strong>LED1</strong></a>...<a href="/appli/etat1"><strong>ETAT</strong></a></li>
+  <li><a href="/appli/light2"><strong>LED2</strong></a>...<a href="/appli/etat2"><strong>ETAT</strong></a></li></li>
+  <li><a href="/appli/lights"><strong>LES LEDS</strong></a></li>
+  <li><a href="/appli/temp"><strong>Temperature</strong></a></li>
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
+</body>
+</html>

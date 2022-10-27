@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<title>Web</title>
+	<link rel="stylesheet" href="{% static 'css/basic.css' %}" type="text/css">
+	<script src="{% static 'js/mqtt.js' %}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+</head>
+
+<body onload="connect()">
+	<li><a href="/appli/home"><strong>ACCUEIL</strong></a></li>
+	<button onclick="publish()">ON</button>
+	<button onclick="publish2()">OFF</button>
+	<div id="window"></div>
+</body>
+
+	<div class="wrapper">
+            <input type="button" onclick="startConnect()" value="Allumer">
+         <div id="messages"></div>
+      </div>
+
+</html>
